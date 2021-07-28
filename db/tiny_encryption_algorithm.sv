@@ -2,8 +2,8 @@
 module tiny_encryption_algorithm (
    input              clk        // clock
   ,input              rst_n      // asychnronous reset active low 
-  ,input			  key_valid  // 1 = input data stable and valid, 0 = o.w.
-  ,input			  ptxt_valid // 1 = input data stable and valid, 0 = o.w.
+  ,input              key_valid  // 1 = input data stable and valid, 0 = o.w.
+  ,input	      ptxt_valid // 1 = input data stable and valid, 0 = o.w.
   ,input      [63:0]  ptxt_blk   // plaintext
   ,input      [127:0] key        // key
   
