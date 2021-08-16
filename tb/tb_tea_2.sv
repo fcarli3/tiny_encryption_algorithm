@@ -18,8 +18,8 @@ module tb_tea_2;
   
   localparam NUL_CHAR = 8'h00; 
 
-  reg			    key_valid   = 1'b0;     // 1 = input data stable and valid, 0 = o.w.
-  reg			    ptxt_valid  = 1'b0;     // 1 = input data stable and valid, 0 = o.w.
+  reg		    key_valid   = 1'b0;     // 1 = input data stable and valid, 0 = o.w.
+  reg		    ptxt_valid  = 1'b0;     // 1 = input data stable and valid, 0 = o.w.
   reg      [63:0]   ptxt_blk    = NUL_CHAR; // plaintext
   reg      [127:0]  key         = NUL_CHAR; // key
   reg      [63:0]   expected_ct = NUL_CHAR; // expected ciphertext (from tv)
@@ -36,8 +36,8 @@ module tb_tea_2;
     ,.ptxt_valid                (ptxt_valid)
     ,.ptxt_blk                  (ptxt_blk)
     ,.key                       (key)
-	,.ctxt_blk                  (ctxt_blk)
-	,.ctxt_ready                (ctxt_ready)
+    ,.ctxt_blk                  (ctxt_blk)
+    ,.ctxt_ready                (ctxt_ready)
   );
   
   // File descriptor 
