@@ -93,11 +93,11 @@ module tb_tea_2;
 		expected_ct = tmp_ct;
 
 		@(posedge clk); 
-		// Waiting until the computed ciphertext is available 
-		wait (ctxt_ready === 1'b1);
 		// Reset the validity flags for the next test
 		ptxt_valid = 1'b0;
 		key_valid  = 1'b0;
+		// Waiting until the computed ciphertext is available 
+		wait (ctxt_ready === 1'b1);
 		
 		@(posedge clk); 
 		$display("%h %h %h %-5s", ptxt_blk, ctxt_blk, expected_ct, expected_ct === ctxt_blk ? "OK" : "ERROR");
