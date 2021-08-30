@@ -13,8 +13,8 @@ At this [link](https://fpgasoftware.intel.com/20.1.1/?edition=lite&platform=wind
 For simplicity, it has been used the following folder organization:
 
 - **db**: HDL desing files (.sv).
-- **Modelsim**: Modelsim project directory.
-- **Quartus**: Quartus project directory.
+- **modelsim**: Modelsim project directory.
+- **quartus**: Quartus project directory.
 - **tb**: testbench HDL files (.sv).
 
 
