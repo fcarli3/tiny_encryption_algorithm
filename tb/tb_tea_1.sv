@@ -54,8 +54,8 @@ initial begin
 	ptxt_valid = 1'b1;
 	key_valid  = 1'b1;
 
-	@(posedge clk); //at this moment the temporary register tmp_ctxt_ready is ready
-	@(posedge clk);	//at this moment the output register ctxt_ready is ready	
+	@(posedge clk); 
+	@(posedge clk);		
 	$display("PTXT_VALID: %b - KEY_VALID: %b - CTXT_READY: %b - %-5s", ptxt_valid, key_valid, ctxt_ready, ctxt_ready === 1'b1 ? "OK" : "ERROR");
 
 
